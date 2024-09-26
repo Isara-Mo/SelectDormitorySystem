@@ -1,2 +1,5 @@
 # SelectDormitorySystem
 The design of a new student dormitory selection system, a new introduction of the work and rest allocation function, before choosing a dormitory will require students to fill in the timetable, divided into early sleep and late sleep.
+
+The design of a new student dormitory selection system, a new introduction of the work and rest allocation function, before choosing a dormitory will require students to fill in the timetable, divided into early sleep and late sleep. After the number of statistics, the corresponding number of rooms will be allocated according to gender, major, timetable, and students can choose accommodation within their own range. At the same time, it provides the administrator with the function of one-click allocation, which automatically allocates the corresponding interval for the students who have not filled in the rest and dormitory.
+设计的一个新的学生选宿系统，新引入了作息分配的功能，选宿之前会预先需要学生填写作息情况，分为早睡与晚睡。统计数量后会根据性别、专业、作息分配相应数量的房间，学生可在自己所在区间内选宿。同时为管理员提供了一键分配的功能，为还未填写作息情况和选择宿舍的同学自动分配对应区间。
