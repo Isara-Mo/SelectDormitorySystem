@@ -350,5 +350,23 @@ namespace SelectDormitory
                 MessageBox.Show("请先停止学生选宿！");
             }
         }
+
+        private void 重置学生选宿情况ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //情况学生表选宿情况
+            string sql1 = "UPDATE Student SET DormitoryBuilding = NULL, DormitoryNumber = NULL, DormitoryBed = NULL,Sleep= NULL;";
+            //情况宿舍表选宿情况
+            string sql2 = "UPDATE DorNum SET Bed1 = NULL, Bed2 = NULL, Bed3 = NULL,Bed4=null,Num=0";
+            //情况选宿分配表
+            string sql3 = "delete from Distribute";
+            //重置管理员model
+            string sql4 = "update Admin set model =0";
+            Dao dao= new Dao();
+            dao.Excute(sql1);
+            dao.Excute(sql2);
+            dao.Excute(sql3);
+            dao.Excute(sql4);
+            MessageBox.Show("已重置学生选宿情况");
+        }
     }
 }

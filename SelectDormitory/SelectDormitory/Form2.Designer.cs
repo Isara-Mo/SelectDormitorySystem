@@ -38,6 +38,7 @@
             this.开放学生选宿ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.关闭学生选宿ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.为未选宿同学分配宿舍ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.重置学生选宿情况ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +49,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.系统ToolStripMenuItem,
             this.管理学生信息填写ToolStripMenuItem,
-            this.开放学生选宿ToolStripMenuItem});
+            this.开放学生选宿ToolStripMenuItem,
+            this.重置学生选宿情况ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 32);
@@ -124,6 +126,13 @@
             this.为未选宿同学分配宿舍ToolStripMenuItem.Text = "为未选宿同学分配宿舍";
             this.为未选宿同学分配宿舍ToolStripMenuItem.Click += new System.EventHandler(this.为未选宿同学分配宿舍ToolStripMenuItem_Click);
             // 
+            // 重置学生选宿情况ToolStripMenuItem
+            // 
+            this.重置学生选宿情况ToolStripMenuItem.Name = "重置学生选宿情况ToolStripMenuItem";
+            this.重置学生选宿情况ToolStripMenuItem.Size = new System.Drawing.Size(170, 28);
+            this.重置学生选宿情况ToolStripMenuItem.Text = "重置学生选宿情况";
+            this.重置学生选宿情况ToolStripMenuItem.Click += new System.EventHandler(this.重置学生选宿情况ToolStripMenuItem_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -152,5 +161,6 @@
         private System.Windows.Forms.ToolStripMenuItem 开放学生选宿ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 关闭学生选宿ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 为未选宿同学分配宿舍ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 重置学生选宿情况ToolStripMenuItem;
     }
 }
