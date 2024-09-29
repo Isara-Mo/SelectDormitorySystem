@@ -35,6 +35,7 @@
             this.填写作息习惯ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.选择宿舍ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.查看自己的宿舍ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +51,7 @@
             this.查看自己的宿舍ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(873, 32);
+            this.menuStrip1.Size = new System.Drawing.Size(873, 36);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -97,16 +98,27 @@
             this.查看自己的宿舍ToolStripMenuItem.Text = "查看自己的宿舍";
             this.查看自己的宿舍ToolStripMenuItem.Click += new System.EventHandler(this.查看自己的宿舍ToolStripMenuItem_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("宋体", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(60, 118);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 52);
+            this.label1.TabIndex = 1;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(873, 673);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form3";
             this.Text = "学生信息中心";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form3_FormClosed);
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -123,5 +135,6 @@
         private System.Windows.Forms.ToolStripMenuItem 修改密码ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 选择宿舍ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 查看自己的宿舍ToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
     }
 }

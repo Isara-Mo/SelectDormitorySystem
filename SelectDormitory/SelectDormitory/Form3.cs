@@ -94,5 +94,42 @@ namespace SelectDormitory
             Form4 form4 = new Form4(StudentId,this);
             form4.ShowDialog();
         }
+        private void Table()
+        {
+            string sql = "SELECT model FROM Admin WHERE Id = 1";
+            Dao dao= new Dao();
+            IDataReader dr = dao.Read(sql);
+            if (dr.Read())
+            {
+                string a;
+                a = dr["model"].ToString().Trim();
+                if (a == "0")
+                {
+                    label1.Text = "请等待管理员开放作息填写";
+                }
+                else if(a == "1")
+                {
+                    label1.Text = "请进行作息填写";
+                }
+                else if (a == "2")
+                {
+                    label1.Text = "请等待管理员开放选宿";
+                }
+                else if (a == "3")
+                {
+                    label1.Text = "请进行选宿";
+                }
+                else
+                {
+                    label1.Text = "已关闭选宿，请查看自己的宿舍情况";
+                }
+   
+            }
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            Table();
+        }
     }
 }
