@@ -46,6 +46,7 @@ namespace SelectDormitory
             {
                 MessageBox.Show("已经开放学生填写信息");
             }
+            Table();
 
         }
 
@@ -88,7 +89,8 @@ namespace SelectDormitory
             {
                 MessageBox.Show("请先开放学生填写信息！");
             }
-            
+            Table();
+
 
         }
         public int[,,] GetSleepStatistics()             //返回数组a[性别][专业][早晚睡]  代表不同分区人数
@@ -231,6 +233,7 @@ namespace SelectDormitory
             {
                 MessageBox.Show("请先关闭信息填写！");
             }
+            Table();
         }
 
         private void 关闭学生选宿ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -253,6 +256,7 @@ namespace SelectDormitory
             {
                 MessageBox.Show("还未开启学生选宿！");
             }
+            Table();
 
         }
         public void AssignDormForUnassignedStudents()
@@ -344,11 +348,14 @@ namespace SelectDormitory
                 dr.Close();
                 AssignDormForUnassignedStudents();
                 MessageBox.Show("为未选宿的同学分配宿舍！");
+                sql = "update Admin set model =5";
+                dao.Excute(sql);
             }
             else
             {
                 MessageBox.Show("请先停止学生选宿！");
             }
+            Table();
         }
 
         private void 重置学生选宿情况ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -367,6 +374,52 @@ namespace SelectDormitory
             dao.Excute(sql3);
             dao.Excute(sql4);
             MessageBox.Show("已重置学生选宿情况");
+            Table();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            Table();
+        }
+        private void Table()
+        {
+            string sql = "SELECT model FROM Admin WHERE Id = 1";
+            Dao dao = new Dao();
+            IDataReader dr = dao.Read(sql);
+            if (dr.Read())
+            {
+                string a;
+                a = dr["model"].ToString().Trim();
+                if (a == "0")
+                {
+                    label1.Text = "等待管理员开放作息填写";
+                }
+                else if (a == "1")
+                {
+                    label1.Text = "正在进行学生信息填写";
+                    label2.Text = "等待下一步操作:关闭学生信息填写";
+                }
+                else if (a == "2")
+                {
+                    label1.Text = "已关闭学生信息填写";
+                    label2.Text = "等待下一步操作:开放学生选宿";
+                }
+                else if (a == "3")
+                {
+                    label1.Text = "正在进行学生选宿";
+                    label2.Text = "等待下一步操作:关闭学生选宿";
+                }
+                else if(a == "4")
+                {
+                    label1.Text = "已关闭选宿";
+                    label2.Text = "可为未选宿同学分配宿舍";
+                }
+                else
+                {
+                    label2.Text = "已为未选宿同学分配宿舍";
+                }
+
+            }
         }
     }
 }

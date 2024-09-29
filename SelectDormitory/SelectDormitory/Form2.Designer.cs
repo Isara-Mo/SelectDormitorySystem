@@ -39,6 +39,8 @@
             this.关闭学生选宿ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.为未选宿同学分配宿舍ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.重置学生选宿情况ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +55,7 @@
             this.重置学生选宿情况ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 32);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 36);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -133,15 +135,36 @@
             this.重置学生选宿情况ToolStripMenuItem.Text = "重置学生选宿情况";
             this.重置学生选宿情况ToolStripMenuItem.Click += new System.EventHandler(this.重置学生选宿情况ToolStripMenuItem_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("宋体", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(67, 110);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 52);
+            this.label1.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("宋体", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Location = new System.Drawing.Point(67, 239);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 44);
+            this.label2.TabIndex = 3;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Form2";
             this.Text = "管理员窗口";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -162,5 +185,7 @@
         private System.Windows.Forms.ToolStripMenuItem 关闭学生选宿ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 为未选宿同学分配宿舍ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 重置学生选宿情况ToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
