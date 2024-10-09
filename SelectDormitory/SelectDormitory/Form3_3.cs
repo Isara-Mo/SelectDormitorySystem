@@ -135,6 +135,21 @@ namespace SelectDormitory
             }
         }
 
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void Table()
         {
             Label[] labels = new Label[] {label10, label11, label12, label13 };
