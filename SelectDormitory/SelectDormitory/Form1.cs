@@ -78,6 +78,7 @@ namespace SelectDormitory
                 }
                 else
                 {
+                    MessageBox.Show("账号或密码错误", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return false;
                 }
             }
