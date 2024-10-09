@@ -28,7 +28,6 @@ namespace SelectDormitory
         {
             
             string sql="update Student set Sleep ='"+comboBox1.Text+"' where Id='"+StudentId+"'";
-            MessageBox.Show(sql);
             Dao dao = new Dao();
             int i=dao.Excute(sql);
             if (i > 0)
