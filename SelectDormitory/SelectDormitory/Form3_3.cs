@@ -125,6 +125,7 @@ namespace SelectDormitory
         private void Form3_3_Load(object sender, EventArgs e)
         {
             Table();
+            this.Text = "宿舍楼栋：" + building + " 宿舍号: " + dor;
         }
 
         private void Form3_3_FormClosed(object sender, FormClosedEventArgs e)
