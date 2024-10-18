@@ -72,7 +72,7 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
             this.Name = "Form3_1";
-            this.Text = "作息习惯填写表";
+            this.Text = "作息习惯填写";
             this.ResumeLayout(false);
             this.PerformLayout();
 

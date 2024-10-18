@@ -370,7 +370,7 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox9);
             this.Name = "Form3_3";
-            this.Text = "Form3_3";
+            this.Text = "宿舍详情";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form3_3_FormClosed);
             this.Load += new System.EventHandler(this.Form3_3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
