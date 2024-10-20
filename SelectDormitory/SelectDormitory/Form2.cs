@@ -393,6 +393,7 @@ namespace SelectDormitory
                 if (a == "0")
                 {
                     label1.Text = "等待管理员开放作息填写";
+                    label2.Text = "";
                 }
                 else if (a == "1")
                 {
