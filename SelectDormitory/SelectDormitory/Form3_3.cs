@@ -16,6 +16,7 @@ namespace SelectDormitory
     public partial class Form3_3 : Form
     {
         string building, dor, StudentId;
+        string building_name, dor_name;
         Form3_2 form3_2;
         int flag;   //表示选宿和查看宿舍两种，选宿为1，查看为0
         public Form3_3(string building,string dor,string StudentId,Form3_2 form3_2)
@@ -25,7 +26,7 @@ namespace SelectDormitory
             this.dor = dor; 
             this.StudentId = StudentId;
             this.form3_2 = form3_2;
-            this.flag = 1;
+            this.flag = 1;  //进行选宿阶段
         }
         public Form3_3(string building, string dor, string StudentId)
         {
@@ -33,7 +34,7 @@ namespace SelectDormitory
             this.building = building;
             this.dor = dor;
             this.StudentId = StudentId;
-            this.flag=0;
+            this.flag=0;    //任意阶段查看选宿
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -125,7 +126,8 @@ namespace SelectDormitory
         private void Form3_3_Load(object sender, EventArgs e)
         {
             Table();
-            this.Text = "宿舍楼栋：" + building + " 宿舍号: " + dor;
+            searchName();
+            this.Text = "宿舍楼栋：" + building_name + " 宿舍号: " + dor_name;
         }
 
         private void Form3_3_FormClosed(object sender, FormClosedEventArgs e)
@@ -193,6 +195,24 @@ namespace SelectDormitory
                 }
             }
             dr.Close();   //读取完后最好关掉读取，否则会造成资源浪费        
+        }
+        public void searchName()
+        {
+            Dao dao = new Dao();
+            IDataReader dr;
+            string sql = "select Name from BuildingName where BuildingId='" + building + "'";
+            dr = dao.Read(sql);
+            if (dr.Read())
+            {
+                building_name = dr["Name"].ToString();
+            }
+            sql = "select DorName from DorName where Id='" + dor + "'";
+            dr = dao.Read(sql);
+            if (dr.Read())
+            {
+                dor_name = dr["DorName"].ToString();
+            }
+            dr.Close();   //读取完后最好关掉读取，否则会造成资源浪费
         }
         public void UpdateDormitory()           //如果已经选过了，则清理痕迹
         {

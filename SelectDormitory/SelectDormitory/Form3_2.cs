@@ -53,7 +53,14 @@ namespace SelectDormitory
                 a = dr2["DormitoryBuilding"].ToString();
                 begin = Convert.ToInt32(dr2["DormitoryNumberBegin"]);
                 end = Convert.ToInt32(dr2["DormitoryNumberEnd"]);
-                for(int i = begin; i <= end; i++)
+                sql = "select Name from BuildingName where BuildingId='" + a + "'";
+                IDataReader dr4 = dao.Read(sql);
+                string building_name="", dor_name="";
+                if (dr4.Read())
+                {
+                    building_name = dr4["Name"].ToString();
+                }
+                for (int i = begin; i <= end; i++)
                 {
                     string sql3 = "select Num from DorNum where DormitoryNumber='"+i+"' and DormitoryBuilding='"+a+"' and Num!=4";
                     Dao dao3 = new Dao();
@@ -62,8 +69,15 @@ namespace SelectDormitory
                     {
                         int num=Convert.ToInt32(dr3["Num"]);
                         int spare = 4 - num;
+                        sql = "select DorName from DorName where Id='" + i + "'";
+                        dr = dao.Read(sql);
+                        if (dr.Read())
+                        {
+                            dor_name = dr["DorName"].ToString();
+                        }
                         string[] str = { a, i.ToString(), spare.ToString() };
-                        dataGridView1.Rows.Add(str);
+                        string[] str1 = { a ,i.ToString() ,building_name, dor_name.ToString(), spare.ToString() };
+                        dataGridView1.Rows.Add(str1);
                     }
                     dr3.Close();
                 }
@@ -82,9 +96,16 @@ namespace SelectDormitory
             building = dataGridView1.SelectedCells[0].Value.ToString();
             dor = dataGridView1.SelectedCells[1].Value.ToString();
             spare = dataGridView1.SelectedCells[2].Value.ToString();
+
             Form3_3 form3_3 = new Form3_3(building,dor,StudentId,this);
             form3_3.ShowDialog();
+
             
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }
