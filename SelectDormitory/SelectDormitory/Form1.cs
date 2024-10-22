@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Security.Cryptography;
 
 namespace SelectDormitory
 {
@@ -44,6 +45,22 @@ namespace SelectDormitory
 
             }
         }
+        private string HashPassword(string password)
+        {
+            using (SHA256 sha256Hash = SHA256.Create())
+            {
+                // ComputeHash - returns byte array  
+                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
+
+                // Convert byte array to a string   
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+                }
+                return builder.ToString();
+            }
+        }
         private bool Login()
         {
             if (textBox1.Text == "" || textBox2.Text == "" || comboBox1.Text == "")
@@ -51,9 +68,10 @@ namespace SelectDormitory
                 MessageBox.Show("输入不完整，请检查", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
+            string hashedPassword = HashPassword(textBox2.Text);
             if (comboBox1.Text == "学生")
             {
-                string sql = "select* from Student where Name ='" + textBox1.Text + "' and Password='" + textBox2.Text + "' ";
+                string sql = "select* from Student where Name ='" + textBox1.Text + "' and Password='" + hashedPassword + "' ";
                 Dao dao = new Dao();
                 IDataReader dr = dao.Read(sql);
                 if (dr.Read())
@@ -69,7 +87,7 @@ namespace SelectDormitory
             }
             else if (comboBox1.Text == "管理员")
             {
-                string sql = "select* from Admin where Id='" + textBox1.Text + "' and Password='" + textBox2.Text + "'";
+                string sql = "select* from Admin where Id='" + textBox1.Text + "' and Password='" + hashedPassword + "'";
                 Dao dao = new Dao();
                 IDataReader dr = dao.Read(sql);
                 if (dr.Read())

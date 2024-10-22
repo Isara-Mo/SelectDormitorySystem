@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -25,6 +26,22 @@ namespace SelectDormitory
         private void Form4_FormClosed(object sender, FormClosedEventArgs e)
         {
 
+        }
+        private string HashPassword(string password)
+        {
+            using (SHA256 sha256Hash = SHA256.Create())
+            {
+                // ComputeHash - returns byte array  
+                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
+
+                // Convert byte array to a string   
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+                }
+                return builder.ToString();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -51,12 +68,14 @@ namespace SelectDormitory
                 opw=textBox1.Text.ToString();
                 npw=textBox2.Text.ToString();
                 tpw=textBox3.Text.ToString();
-                string sql = "select * from Student where Id='" + StudentId + "' and Password='" + opw + "'";
+                string hashed_opw = HashPassword(opw);
+                string hashed_npw = HashPassword(npw);
+                string sql = "select * from Student where Id='" + StudentId + "' and Password='" + hashed_opw + "'";
                 Dao dao = new Dao();
                 IDataReader dr = dao.Read(sql);
                 if (dr.Read())
                 {
-                    sql = "update Student set Password='" + npw + "'where Id='" + StudentId + "'";
+                    sql = "update Student set Password='" + hashed_npw + "'where Id='" + StudentId + "'";
                     int i=dao.Excute(sql);
                     if (i > 0)
                     {
