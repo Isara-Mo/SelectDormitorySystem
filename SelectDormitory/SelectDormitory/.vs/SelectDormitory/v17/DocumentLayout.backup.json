@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|d:\\code\\selectdormitory\\selectdormitorysystem\\selectdormitory\\selectdormitory\\form3_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|solutionrelative:form3_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\form3_3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|solutionrelative:form3_3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\form3_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|solutionrelative:form3_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|d:\\code\\selectdormitory\\selectdormitorysystem\\selectdormitory\\selectdormitory\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\form3_3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|solutionrelative:form3_3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\form3_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|solutionrelative:form3_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\form3_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|solutionrelative:form3_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\form3_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|solutionrelative:form3_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\form3_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|solutionrelative:form3_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDF8756F-62E8-4119-A00A-EEC1865F1935}|SelectDormitory.csproj|D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,54 +54,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form3_2.cs",
-              "DocumentMoniker": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form3_2.cs",
-              "RelativeDocumentMoniker": "Form3_2.cs",
-              "ToolTip": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form3_2.cs",
-              "RelativeToolTip": "Form3_2.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAApwFMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T07:00:44.16Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form3_3.cs",
-              "DocumentMoniker": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form3_3.cs",
-              "RelativeDocumentMoniker": "Form3_3.cs",
-              "ToolTip": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form3_3.cs",
-              "RelativeToolTip": "Form3_3.cs",
-              "ViewState": "AgIAAKUAAAAAAAAAAAAtwK4AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T07:41:23.371Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Form3_2.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form3_2.cs",
-              "RelativeDocumentMoniker": "Form3_2.cs",
-              "ToolTip": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form3_2.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "Form3_2.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T07:59:27.676Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Form3_3.cs [\u8BBE\u8BA1]",
               "DocumentMoniker": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form3_3.cs",
               "RelativeDocumentMoniker": "Form3_3.cs",
               "ToolTip": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form3_3.cs [\u8BBE\u8BA1]",
               "RelativeToolTip": "Form3_3.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T05:53:19.486Z"
+              "WhenOpened": "2024-10-18T05:53:19.486Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form2.cs",
+              "RelativeToolTip": "Form2.cs",
+              "ViewState": "AgIAACoBAAAAAAAAAAAkwIsBAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T08:05:10.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form3_2.cs",
+              "DocumentMoniker": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form3_2.cs",
+              "RelativeDocumentMoniker": "Form3_2.cs",
+              "ToolTip": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form3_2.cs",
+              "RelativeToolTip": "Form3_2.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAqwFMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T07:00:44.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form3_1.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form3_1.cs",
+              "RelativeDocumentMoniker": "Form3_1.cs",
+              "ToolTip": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form3_1.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "Form3_1.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T07:59:19.498Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form3_3.cs",
+              "DocumentMoniker": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form3_3.cs",
+              "RelativeDocumentMoniker": "Form3_3.cs",
+              "ToolTip": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form3_3.cs",
+              "RelativeToolTip": "Form3_3.cs",
+              "ViewState": "AgIAANsAAAAAAAAAAAAowO8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T07:41:23.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form3_2.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form3_2.cs",
+              "RelativeDocumentMoniker": "Form3_2.cs",
+              "ToolTip": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form3_2.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "Form3_2.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T07:59:27.676Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
             },
             {
               "$type": "Document",
@@ -112,34 +140,12 @@
               "ToolTip": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form2.cs [\u8BBE\u8BA1]",
               "RelativeToolTip": "Form2.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T07:34:26.712Z"
+              "WhenOpened": "2024-10-16T07:34:26.712Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form2.cs",
-              "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form2.cs",
-              "RelativeToolTip": "Form2.cs",
-              "ViewState": "AgIAAPoAAAAAAAAAAAArwAMBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T08:05:10.912Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Form3_1.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form3_1.cs",
-              "RelativeDocumentMoniker": "Form3_1.cs",
-              "ToolTip": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form3_1.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "Form3_1.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T07:59:19.498Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Form3.cs [\u8BBE\u8BA1]",
               "DocumentMoniker": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form3.cs",
               "RelativeDocumentMoniker": "Form3.cs",
@@ -150,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Form1.cs [\u8BBE\u8BA1]",
               "DocumentMoniker": "D:\\code\\SelectDormitory\\SelectDormitorySystem\\SelectDormitory\\SelectDormitory\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",

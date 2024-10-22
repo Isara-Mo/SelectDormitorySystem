@@ -38,90 +38,109 @@ namespace SelectDormitory
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            UpdateDormitory();
-            String sql = "update DorNum set Bed1='"+StudentId+ "'where DormitoryNumber="+dor+" and DormitoryBuilding= "+building+"";
-            Dao dao = new Dao();
-            int i = dao.Excute(sql);
-            if (i > 0)
-            {
-                MessageBox.Show("选择床位成功");
-                Table();
-                string sql2 = "update DorNum set Num=Num+1 where DormitoryNumber=" + dor + " and DormitoryBuilding= " + building + " ";
-                dao.Excute(sql2);
-            }
-            string sql3 = "update Student set DormitoryNumber='"+dor+ "' where Id='"+StudentId+"'";
-            dao.Excute(sql3);
-            string sql4 = "update Student set DormitoryBuilding='" + building + "' where Id='" + StudentId + "'";
-            dao.Excute(sql4);
-            string sql5 = "update Student set DormitoryBed=1 where Id='" + StudentId + "'";
-            dao.Excute(sql5);
-            Table();
+            SelectDormitory("Bed1", 1);
         }
+
         private void button2_Click(object sender, EventArgs e)
         {
-            UpdateDormitory();
-            String sql = "update DorNum set Bed2='" + StudentId + "'where DormitoryNumber=" + dor + " and DormitoryBuilding= " + building + "";
-            Dao dao = new Dao();
-            int i = dao.Excute(sql);
-            if (i > 0)
-            {
-                MessageBox.Show("选择床位成功");
-                Table();
-                string sql2 = "update DorNum set Num=Num+1 where DormitoryNumber=" + dor + " and DormitoryBuilding= " + building + " ";
-                dao.Excute(sql2);
-            }
-            string sql3 = "update Student set DormitoryNumber='" + dor + "' where Id='" + StudentId + "'";
-            dao.Excute(sql3);
-            string sql4 = "update Student set DormitoryBuilding='" + building + "' where Id='" + StudentId + "'";
-            dao.Excute(sql4);
-            string sql5 = "update Student set DormitoryBed=2 where Id='" + StudentId + "'";
-            dao.Excute(sql5);
-            Table();
+            SelectDormitory("Bed2", 2);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            UpdateDormitory();
-            String sql = "update DorNum set Bed3='" + StudentId + "'where DormitoryNumber=" + dor + " and DormitoryBuilding= " + building + "";
-            Dao dao = new Dao();
-            int i = dao.Excute(sql);
-            if (i > 0)
-            {
-                MessageBox.Show("选择床位成功");
-                Table();
-                string sql2 = "update DorNum set Num=Num+1 where DormitoryNumber=" + dor + " and DormitoryBuilding= " + building + " ";
-                dao.Excute(sql2);
-            }
-            string sql3 = "update Student set DormitoryNumber='" + dor + "' where Id='" + StudentId + "'";
-            dao.Excute(sql3);
-            string sql4 = "update Student set DormitoryBuilding='" + building + "' where Id='" + StudentId + "'";
-            dao.Excute(sql4);
-            string sql5 = "update Student set DormitoryBed=3 where Id='" + StudentId + "'";
-            dao.Excute(sql5);
-            Table();
+            SelectDormitory("Bed3", 3);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            UpdateDormitory();
-            String sql = "update DorNum set Bed4='" + StudentId + "'where DormitoryNumber=" + dor + " and DormitoryBuilding= " + building + "";
-            Dao dao = new Dao();
-            int i = dao.Excute(sql);
-            if (i > 0)
-            {
-                MessageBox.Show("选择床位成功");
-                Table();
-                string sql2 = "update DorNum set Num=Num+1 where DormitoryNumber=" + dor + " and DormitoryBuilding= " + building + " ";
-                dao.Excute(sql2);
-            }
-            string sql3 = "update Student set DormitoryNumber='" + dor + "' where Id='" + StudentId + "'";
-            dao.Excute(sql3);
-            string sql4 = "update Student set DormitoryBuilding='" + building + "' where Id='" + StudentId + "'";
-            dao.Excute(sql4);
-            string sql5 = "update Student set DormitoryBed=4 where Id='" + StudentId + "'";
-            dao.Excute(sql5);
-            Table();
+            SelectDormitory("Bed4", 4);
         }
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    UpdateDormitory();
+        //    String sql = "update DorNum set Bed1='"+StudentId+ "'where DormitoryNumber="+dor+" and DormitoryBuilding= "+building+"";
+        //    Dao dao = new Dao();
+        //    int i = dao.Excute(sql);
+        //    if (i > 0)
+        //    {
+        //        MessageBox.Show("选择床位成功");
+        //        Table();
+        //        string sql2 = "update DorNum set Num=Num+1 where DormitoryNumber=" + dor + " and DormitoryBuilding= " + building + " ";
+        //        dao.Excute(sql2);
+        //    }
+        //    string sql3 = "update Student set DormitoryNumber='"+dor+ "' where Id='"+StudentId+"'";
+        //    dao.Excute(sql3);
+        //    string sql4 = "update Student set DormitoryBuilding='" + building + "' where Id='" + StudentId + "'";
+        //    dao.Excute(sql4);
+        //    string sql5 = "update Student set DormitoryBed=1 where Id='" + StudentId + "'";
+        //    dao.Excute(sql5);
+        //    Table();
+        //}
+        //private void button2_Click(object sender, EventArgs e)
+        //{
+        //    UpdateDormitory();
+        //    String sql = "update DorNum set Bed2='" + StudentId + "'where DormitoryNumber=" + dor + " and DormitoryBuilding= " + building + "";
+        //    Dao dao = new Dao();
+        //    int i = dao.Excute(sql);
+        //    if (i > 0)
+        //    {
+        //        MessageBox.Show("选择床位成功");
+        //        Table();
+        //        string sql2 = "update DorNum set Num=Num+1 where DormitoryNumber=" + dor + " and DormitoryBuilding= " + building + " ";
+        //        dao.Excute(sql2);
+        //    }
+        //    string sql3 = "update Student set DormitoryNumber='" + dor + "' where Id='" + StudentId + "'";
+        //    dao.Excute(sql3);
+        //    string sql4 = "update Student set DormitoryBuilding='" + building + "' where Id='" + StudentId + "'";
+        //    dao.Excute(sql4);
+        //    string sql5 = "update Student set DormitoryBed=2 where Id='" + StudentId + "'";
+        //    dao.Excute(sql5);
+        //    Table();
+        //}
+
+        //private void button3_Click(object sender, EventArgs e)
+        //{
+        //    UpdateDormitory();
+        //    String sql = "update DorNum set Bed3='" + StudentId + "'where DormitoryNumber=" + dor + " and DormitoryBuilding= " + building + "";
+        //    Dao dao = new Dao();
+        //    int i = dao.Excute(sql);
+        //    if (i > 0)
+        //    {
+        //        MessageBox.Show("选择床位成功");
+        //        Table();
+        //        string sql2 = "update DorNum set Num=Num+1 where DormitoryNumber=" + dor + " and DormitoryBuilding= " + building + " ";
+        //        dao.Excute(sql2);
+        //    }
+        //    string sql3 = "update Student set DormitoryNumber='" + dor + "' where Id='" + StudentId + "'";
+        //    dao.Excute(sql3);
+        //    string sql4 = "update Student set DormitoryBuilding='" + building + "' where Id='" + StudentId + "'";
+        //    dao.Excute(sql4);
+        //    string sql5 = "update Student set DormitoryBed=3 where Id='" + StudentId + "'";
+        //    dao.Excute(sql5);
+        //    Table();
+        //}
+
+        //private void button4_Click(object sender, EventArgs e)
+        //{
+        //    UpdateDormitory();
+        //    String sql = "update DorNum set Bed4='" + StudentId + "'where DormitoryNumber=" + dor + " and DormitoryBuilding= " + building + "";
+        //    Dao dao = new Dao();
+        //    int i = dao.Excute(sql);
+        //    if (i > 0)
+        //    {
+        //        MessageBox.Show("选择床位成功");
+        //        Table();
+        //        string sql2 = "update DorNum set Num=Num+1 where DormitoryNumber=" + dor + " and DormitoryBuilding= " + building + " ";
+        //        dao.Excute(sql2);
+        //    }
+        //    string sql3 = "update Student set DormitoryNumber='" + dor + "' where Id='" + StudentId + "'";
+        //    dao.Excute(sql3);
+        //    string sql4 = "update Student set DormitoryBuilding='" + building + "' where Id='" + StudentId + "'";
+        //    dao.Excute(sql4);
+        //    string sql5 = "update Student set DormitoryBed=4 where Id='" + StudentId + "'";
+        //    dao.Excute(sql5);
+        //    Table();
+        //}
 
         private void Form3_3_Load(object sender, EventArgs e)
         {
@@ -213,6 +232,27 @@ namespace SelectDormitory
                 dor_name = dr["DorName"].ToString();
             }
             dr.Close();   //读取完后最好关掉读取，否则会造成资源浪费
+        }
+        public void SelectDormitory(string bedColumn, int bedNumber)
+        {
+            UpdateDormitory();
+            String sql = $"update DorNum set "+bedColumn+"='" + StudentId + "'where DormitoryNumber=" + dor + " and DormitoryBuilding= " + building + "";
+            Dao dao = new Dao();
+            int i = dao.Excute(sql);
+            if (i > 0)
+            {
+                MessageBox.Show("选择床位成功");
+                Table();
+                string sql2 = "update DorNum set Num=Num+1 where DormitoryNumber=" + dor + " and DormitoryBuilding= " + building + " ";
+                dao.Excute(sql2);
+            }
+            string sql3 = "update Student set DormitoryNumber='" + dor + "' where Id='" + StudentId + "'";
+            dao.Excute(sql3);
+            string sql4 = "update Student set DormitoryBuilding='" + building + "' where Id='" + StudentId + "'";
+            dao.Excute(sql4);
+            string sql5 = "update Student set DormitoryBed= '"+bedNumber+"' where Id='" + StudentId + "'";
+            dao.Excute(sql5);
+            Table();
         }
         public void UpdateDormitory()           //如果已经选过了，则清理痕迹
         {
